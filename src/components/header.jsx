@@ -5,7 +5,7 @@ import '../App.css';
 function Header() {
   const [hover, setHover] = useState(false);
   return (
-    <header className='d-flex flex-column align-items-center justify-content-center text-center col-12 text-light pt-serif-bold-italic hero'>
+    <header className='d-flex flex-column align-items-center justify-content-center text-center p-4 text-light pt-serif-bold-italic hero'>
       <h1 className='text-2xl fw-bold display-3'>Strengthen your mind.</h1>
       <h1 className='text-2xl fw-bold display-3'>Find your calm.</h1>
       <h1 className='text-2xl fw-bold display-3'>Make your next move count.</h1>
