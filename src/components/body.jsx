@@ -1,22 +1,42 @@
+import { useEffect } from 'react';
 import Button from './button';
 
 function Body() {
+  useEffect(() => {
+    const elements = document.querySelectorAll('.slide-in');
+    
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    elements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className='mt-5 pt-serif-regular-italic'>
       <div className='container-fluid d-flex flex-column p-3 justify-content-center'>
         {/* Why we play */}
-        <h1>Why We Play</h1>
-        <p className='fs-5'>
+        <h1 className='slide-in'>Why We Play</h1>
+        <p className='fs-5 slide-in'>
           It's more than winning — it's who you become in the process.
         </p>
         <div className='row'>
-          <div className='col-sm-6'>
+          <div className='col-sm-6 slide-in'>
             <p>
               <span className='fw-semibold'>For the overthinker:</span> Chess
               teaches restraint — when to wait, and when to strike.
             </p>
           </div>
-          <div className='col-sm-6'>
+          <div className='col-sm-6 slide-in'>
             <p>
               <span className='fw-semibold'>For the restless:</span> The board
               is a quiet space where your mind finds rhythm.
@@ -24,13 +44,13 @@ function Body() {
           </div>
         </div>
         <div className='row'>
-          <div className='col-sm-6'>
+          <div className='col-sm-6 slide-in'>
             <p>
               <span className='fw-semibold'>For the dreamer:</span> It's a
               canvas for strategy, imagination, and possibility
             </p>
           </div>
-          <div className='col-sm-6'>
+          <div className='col-sm-6 slide-in'>
             <p>
               <span className='fw-semibold'>For the lifelong learner:</span>{' '}
               There's always another layer to uncover.
@@ -40,12 +60,12 @@ function Body() {
       </div>
       {/* The science of strategy */}
       <div className='container-fluid d-flex flex-column p-3 justify-content-center align-items-center'>
-        <h1 className=''>🧬 The Science of Strategy</h1>
-        <p className='fs-5'>
+        <h1 className='slide-in'>🧬 The Science of Strategy</h1>
+        <p className='fs-5 slide-in'>
           Chess isn't just good for the soul — it's proven to strengthen the
           mind.
         </p>
-        <div className='col-md-7'>
+        <div className='col-md-7 slide-in'>
           <p>
             <span className='fw-semibold'>🧠 Memory Boost:</span> Chess
             activates both short-term and long-term memory. Studies show that
@@ -53,14 +73,14 @@ function Body() {
             easier to learn new information.
           </p>
         </div>
-        <div className='col-md-7'>
+        <div className='col-md-7 slide-in'>
           <p>
             <span className='fw-semibold'>🎯 Improved Focus:</span> Regular play
             trains your brain to sustain attention. This can lead to better
             concentration in other areas of life, from work to school.
           </p>
         </div>
-        <div className='col-md-7'>
+        <div className='col-md-7 slide-in'>
           <p>
             <span className='fw-semibold'>🕰️ Cognitive Longevity:</span> Studies
             show a link between chess and reduced risk of cognitive decline.
@@ -70,11 +90,11 @@ function Body() {
         </div>
         <div className='row justify-content-center mt-4 p-2'>
           <blockquote className='blockquote'>
-            <p className='fs-4 fw-semibold px-3 quote'>
+            <p className='fs-4 fw-semibold px-3 quote slide-in'>
               “Chess players demonstrate stronger planning, calculation, and
               reasoning skills — and the effects grow over time.”
             </p>
-            <footer className='blockquote-footer text-end'>
+            <footer className='blockquote-footer text-end slide-in'>
               Cognitive Neuroscience Journal, 2021
             </footer>
           </blockquote>
@@ -82,9 +102,9 @@ function Body() {
       </div>
       {/* Stories from the board */}
       <div className='container-fluid d-flex flex-column justify-content-center align-items-center'>
-        <h1 className=''>✍️ Stories from the Board</h1>
-        <p className='fs-5'>Real reflections from real players:</p>
-        <div className='row mt-2 testimonials'>
+        <h1 className='slide-in'>✍️ Stories from the Board</h1>
+        <p className='fs-5 slide-in'>Real reflections from real players:</p>
+        <div className='row mt-2 testimonials slide-in'>
           <div className='col-md-4 mb-4 testimonial'>
             <img
               className='w-50 h-auto rounded-circle'
@@ -152,25 +172,25 @@ function Body() {
         </div>
       </div>
       <div className='container-fluid d-flex flex-column justify-content-center align-items-center'>
-        <h1>♟️ Your Next Move Starts Here</h1>
-        <p className='fs-5'>
+        <h1 className='slide-in'>♟️ Your Next Move Starts Here</h1>
+        <p className='fs-5 slide-in'>
           Whether you're picking up a pawn for the first time or returning to
           the board after years away —{' '}
           <span className='fw-semibold'>this is your moment to begin!</span>
         </p>
         <div className='col-sm-9 fs-5'>
           <ul className='custom-list-style'>
-            <li className='d-flex gap-4 text-start'>
+            <li className='d-flex gap-4 text-start slide-in'>
               <span className='text'>
                 💡 Beginner-friendly guides and lessons
               </span>
             </li>
-            <li className='d-flex gap-4 text-start'>
+            <li className='d-flex gap-4 text-start slide-in'>
               <span className='text'>
                 🌍 Join a mindful community of learners
               </span>
             </li>
-            <li className='d-flex gap-4 text-start'>
+            <li className='d-flex gap-4 text-start slide-in'>
               <span className='text'>
                 🔁 Practice, reflect, and grow at your own pace
               </span>
@@ -183,7 +203,7 @@ function Body() {
                 onClick={() =>
                   window.open('https://www.chess.com/lessons', '_blank')
                 }
-                className={'rounded-pill p-3 mb-2 cta-button'}
+                className={'rounded-pill px-3 py-2 fw-semibold mb-2 cta-button slide-in'}
                 style={{ color: 'aliceblue', backgroundColor: '#b66a50' }}
               />
             </div>
@@ -193,7 +213,7 @@ function Body() {
                 onClick={() =>
                   window.open('https://discord.com/invite/chesscom', '_blank')
                 }
-                className={'rounded-pill p-3 mb-2 cta-button'}
+                className={'rounded-pill px-3 py-2 fw-semibold mb-2 cta-button slide-in'}
                 style={{
                   color: 'aliceblue',
                   backgroundColor: '#b66a50'
