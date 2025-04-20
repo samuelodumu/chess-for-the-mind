@@ -85,7 +85,7 @@ function Body() {
         <h1 className=''>✍️ Stories from the Board</h1>
         <p className='fs-5'>Real reflections from real players:</p>
         <div className='row mt-2 testimonials'>
-          <div className='col-md-4 mb-4'>
+          <div className='col-md-4 mb-4 testimonial'>
             <img
               className='w-50 h-auto rounded-circle'
               src='/images/doctor-uifaces.jpg'
@@ -98,7 +98,7 @@ function Body() {
             </p>
             <small>—Kai Takahashi, 28</small>
           </div>
-          <div className='col-md-4 mb-4'>
+          <div className='col-md-4 mb-4 testimonial'>
             <img
               className='w-50 h-auto rounded-circle'
               src='/images\woman_uifaces.jpg'
@@ -111,7 +111,7 @@ function Body() {
             </p>
             <small>—Jasmine Olayiwa, 31</small>
           </div>
-          <div className='col-md-4 mb-4'>
+          <div className='col-md-4 mb-4 testimonial'>
             <img
               className='w-50 h-auto rounded-circle'
               src='/images/tech-bro-uifaces.jpg'
@@ -124,7 +124,7 @@ function Body() {
             </p>
             <small>—Luis García, 19</small>
           </div>
-          <div className='col-md-4 mb-4'>
+          <div className='col-md-4 mb-4 testimonial'>
             <img
               className='w-50 h-auto rounded-circle'
               src='/images/smiling-boy.png'
@@ -137,7 +137,7 @@ function Body() {
             </p>
             <small>—Tunde Onakoya, 12</small>
           </div>
-          <div className='col-md-4 mb-4'>
+          <div className='col-md-4 mb-4 testimonial'>
             <img
               className='w-50 h-auto rounded-circle'
               src='/images/white-woman.jpg'

@@ -63,7 +63,7 @@ function Footer() {
             <p className='m-0 p-0'>
               © Chess For The Mind. All rights reserved.
             </p>
-            <p className='m-0 p-0'>Made with love &lt;3 by Samuel Odumu</p>
+            <p className='m-0 p-0'>Made with &lt;3 by Samuel Odumu</p>
           </div>
           <div className='col-md-7 mb-0 p-0'>
             <img
