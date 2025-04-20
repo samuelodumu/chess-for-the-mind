@@ -6,10 +6,10 @@ function Header() {
   const [hover, setHover] = useState(false);
   return (
     <header className='d-flex flex-column align-items-center justify-content-center text-center p-4 text-light pt-serif-bold-italic hero'>
-      <h1 className='text-2xl fw-bold display-3'>Strengthen your mind.</h1>
-      <h1 className='text-2xl fw-bold display-3'>Find your calm.</h1>
-      <h1 className='text-2xl fw-bold display-3'>Make your next move count.</h1>
-      <div className='col-md-7 mx-auto'>
+      <h1 className='fw-bold display-3'>Strengthen your mind.</h1>
+      <h1 className='fw-bold display-3'>Find your calm.</h1>
+      <h1 className='fw-bold display-3'>Make your next move count.</h1>
+      <div className='col-lg-7 justify-content-center'>
         <p className='fs-4 mt-2'>
           In a world that moves too fast, chess invites you to slow down — and
           think deeply. Whether you're a beginner or a seasoned player, every

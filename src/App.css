@@ -26,3 +26,35 @@
   filter: blur(2px);
   z-index: -1;
 }
+
+.quote {
+  border-left: 4px solid #584436;
+}
+
+.custom-list-style {
+  list-style: none;
+}
+
+.custom-list-style li::before {
+  content: '➤';
+  color: #584436;
+  min-width: 1.2em;
+}
+
+.cta-button {
+  animation: bounce 1.2s ease-in-out infinite;
+}
+.cta-button:hover {
+  animation: none;
+  transform: scale(1.05);
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
