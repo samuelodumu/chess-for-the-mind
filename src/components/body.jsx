@@ -84,13 +84,13 @@ function Body() {
       <div className='container-fluid d-flex flex-column justify-content-center align-items-center'>
         <h1 className=''>✍️ Stories from the Board</h1>
         <p className='fs-5'>Real reflections from real players:</p>
-        <div className='row mt-2'>
+        <div className='row mt-2 testimonials'>
           <div className='col-md-4 mb-4'>
             <img
               className='w-50 h-auto rounded-circle'
-              src='src\assets\doctor-uifaces.jpg'
+              src='/images/doctor-uifaces.jpg'
               loading='lazy'
-              alt='A smiling boy behind a chessboard'
+              alt='A doctor with a neutral expression against a neutral background'
             />
             <p className='mt-2 mb-0'>
               “Chess helped me rebuild my focus after burnout. It taught me
@@ -101,9 +101,9 @@ function Body() {
           <div className='col-md-4 mb-4'>
             <img
               className='w-50 h-auto rounded-circle'
-              src='src\assets\woman_uifaces.jpg'
+              src='/images\woman_uifaces.jpg'
               loading='lazy'
-              alt='A smiling boy behind a chessboard'
+              alt='A black woman with a fro and neutral expression against a blured background'
             />
             <p className='mt-2 mb-0'>
               “My daughter and I started learning together — now we play every
@@ -114,15 +114,40 @@ function Body() {
           <div className='col-md-4 mb-4'>
             <img
               className='w-50 h-auto rounded-circle'
-              src='src\assets\tech-bro-uifaces.jpg'
+              src='/images/tech-bro-uifaces.jpg'
               loading='lazy'
-              alt='A smiling boy behind a chessboard'
+              alt='A man with glasses against a blured background'
             />
             <p className='mt-2 mb-0'>
               “When I started playing, I was just curious. Now, it's the most
               mindful part of my week.”
             </p>
             <small>—Luis García, 19</small>
+          </div>
+          <div className='col-md-4 mb-4'>
+            <img
+              className='w-50 h-auto rounded-circle'
+              src='/images/smiling-boy.png'
+              loading='lazy'
+              alt='A smiling boy against a blured background'
+            />
+            <p className='mt-2 mb-0'>
+              “On the board, I don't have to rush. I can breath, plan, and
+              grow.”
+            </p>
+            <small>—Tunde Onakoya, 12</small>
+          </div>
+          <div className='col-md-4 mb-4'>
+            <img
+              className='w-50 h-auto rounded-circle'
+              src='/images/white-woman.jpg'
+              loading='lazy'
+              alt='A smiling boy against a blured background'
+            />
+            <p className='mt-2 mb-0'>
+              “Chess is my escape. When I play, it's like nothing else matters.”
+            </p>
+            <small>—Zoe Monroe, 36</small>
           </div>
         </div>
       </div>
@@ -155,6 +180,9 @@ function Body() {
             <div className='col-sm-6'>
               <Button
                 label={'📖 Take Your First Lesson'}
+                onClick={() =>
+                  window.open('https://www.chess.com/lessons', '_blank')
+                }
                 className={'rounded-pill p-3 mb-2 cta-button'}
                 style={{ color: 'aliceblue', backgroundColor: '#b66a50' }}
               />
@@ -162,10 +190,13 @@ function Body() {
             <div className='col-sm-6'>
               <Button
                 label={'🤝 Join the Community'}
+                onClick={() =>
+                  window.open('https://discord.com/invite/chesscom', '_blank')
+                }
                 className={'rounded-pill p-3 mb-2 cta-button'}
                 style={{
                   color: 'aliceblue',
-                  backgroundColor: '#b66a50',
+                  backgroundColor: '#b66a50'
                 }}
               />
             </div>
