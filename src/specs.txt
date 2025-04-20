@@ -1,3 +1,4 @@
 background-color: aliceblue;
 color: #7a5c47 or #584436
 CTAs background: #b66a50
+Footer color: #d3c4ba;

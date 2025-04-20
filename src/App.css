@@ -47,6 +47,7 @@
 .cta-button:hover {
   animation: none;
   transform: scale(1.05);
+  color: #d3c4ba;
 }
 
 @keyframes bounce {
@@ -58,3 +59,16 @@
   }
 }
 
+footer a {
+  display: inline-block;
+  color: #d3c4ba;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+}
