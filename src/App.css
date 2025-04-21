@@ -42,6 +42,37 @@
   border-left: 4px solid #584436;
 }
 
+.marquee-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee 10s linear infinite;
+}
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-item {
+  flex: 0 0 auto;
+  width: 300px;
+  padding: 1rem;
+  margin-right: 0;
+  box-sizing: border-box;
+}
+
 .custom-list-style {
   list-style: none;
 }

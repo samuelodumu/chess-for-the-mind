@@ -26,7 +26,7 @@ function Footer() {
       style={{ color: '#d3c4ba' }}>
       <div className='container-fluid justify-content-center align-items-center pt-serif-regular'>
         <div className='row'>
-          <div className='col-md-5 mt-4'>
+          <div className='col-md-5 mt-4 py-3'>
             <h2 className='fw-semibold slide-in'>Quick links</h2>
             <div className='quick-links'>
               <a
@@ -51,34 +51,34 @@ function Footer() {
                 predicting the winners of top games.
               </a>
             </div>
-            <div className='socials my-3  slide-in'>
+            <div className='socials my-3 slide-in'>
               <a
                 href='https://www.linkedin.com/in/samuelodumu/'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='fs-4 px-4'>
-                <i class='bi bi-linkedin'></i>
+                <i className='bi bi-linkedin'></i>
               </a>
               <a
                 href='https://x.com/themainsamuel'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='fs-4 px-4'>
-                <i class='bi bi-twitter-x'></i>
+                <i className='bi bi-twitter-x'></i>
               </a>
               <a
                 href='https://github.com/samuelodumu/'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='fs-4 px-4'>
-                <i class='bi bi-github'></i>
+                <i className='bi bi-github'></i>
               </a>
               <a
                 href='https://www.youtube.com/@themainsamuel'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='fs-4 px-4'>
-                <i class='bi bi-youtube'></i>
+                <i className='bi bi-youtube'></i>
               </a>
             </div>
             <p className='m-0 p-0 slide-in'>
@@ -86,7 +86,7 @@ function Footer() {
             </p>
             <p className='m-0 p-0 slide-in'>Made with &lt;3 by Samuel Odumu</p>
           </div>
-          <div className='col-md-7 mb-0 p-0 slide-in'>
+          <div className='col-md-7 mb-0 p-0 d-flex justify-content-center align-items-end slide-in'>
             <img
               src='/images/chess_stash.png'
               className='img-fluid'

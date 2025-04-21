@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Review Marquee</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .marquee-wrapper {
+      overflow: hidden;
+      position: relative;
+      background: #f8f9fa;
+    }
+
+    .marquee-track {
+      display: flex;
+      gap: 1rem;
+      animation: scroll 20s linear infinite;
+    }
+
+    .marquee-wrapper:hover .marquee-track {
+      animation-play-state: paused;
+    }
+
+    @keyframes scroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); } /* We duplicate the content so we scroll seamlessly */
+    }
+
+    .review-card {
+      flex: 0 0 auto;
+      width: 250px;
+      background: white;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .review-card img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 0.75rem;
+    }
+
+    .review-card p {
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="marquee-wrapper py-3">
+  <div class="marquee-track">
+
+    <!-- Duplicate this set to make seamless loop -->
+    <div class="d-flex">
+      <!-- Review Card 1 -->
+      <div class="review-card">
+        <img src="https://via.placeholder.com/60" alt="User">
+        <p>"This product changed my life! ⭐⭐⭐⭐⭐"</p>
+      </div>
+      <!-- Review Card 2 -->
+      <div class="review-card">
+        <img src="https://via.placeholder.com/60" alt="User">
+        <p>"Amazing quality and fast shipping!"</p>
+      </div>
+      <!-- Review Card 3 -->
+      <div class="review-card">
+        <img src="https://via.placeholder.com/60" alt="User">
+        <p>"I’ve been recommending it to everyone."</p>
+      </div>
+      <!-- Add more cards -->
+    </div>
+
+    <!-- Duplicate again for seamless scrolling -->
+    <div class="d-flex">
+      <!-- Same review cards (or more for variation) -->
+      <div class="review-card">
+        <img src="https://via.placeholder.com/60" alt="User">
+        <p>"This product changed my life! ⭐⭐⭐⭐⭐"</p>
+      </div>
+      <div class="review-card">
+        <img src="https://via.placeholder.com/60" alt="User">
+        <p>"Amazing quality and fast shipping!"</p>
+      </div>
+      <div class="review-card">
+        <img src="https://via.placeholder.com/60" alt="User">
+        <p>"I’ve been recommending it to everyone."</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

@@ -4,7 +4,7 @@ import Button from './button';
 function Body() {
   useEffect(() => {
     const elements = document.querySelectorAll('.slide-in');
-    
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -203,7 +203,9 @@ function Body() {
                 onClick={() =>
                   window.open('https://www.chess.com/lessons', '_blank')
                 }
-                className={'rounded-pill px-3 py-2 fw-semibold mb-2 cta-button slide-in'}
+                className={
+                  'rounded-pill px-3 py-2 fw-semibold mb-2 cta-button slide-in'
+                }
                 style={{ color: 'aliceblue', backgroundColor: '#b66a50' }}
               />
             </div>
@@ -213,7 +215,9 @@ function Body() {
                 onClick={() =>
                   window.open('https://discord.com/invite/chesscom', '_blank')
                 }
-                className={'rounded-pill px-3 py-2 fw-semibold mb-2 cta-button slide-in'}
+                className={
+                  'rounded-pill px-3 py-2 fw-semibold mb-2 cta-button slide-in'
+                }
                 style={{
                   color: 'aliceblue',
                   backgroundColor: '#b66a50'
