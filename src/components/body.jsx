@@ -144,7 +144,8 @@ function Body() {
             </p>
             <small>—Luis García, 19</small>
           </div>
-          <div className='col-md-4 mb-4 testimonial'>
+          <div className="row justify-content-center">
+            <div className='col-md-4 mb-4 testimonial'>
             <img
               className='w-50 h-auto rounded-circle'
               src='/images/smiling-boy.png'
@@ -168,6 +169,7 @@ function Body() {
               “Chess is my escape. When I play, it's like nothing else matters.”
             </p>
             <small>—Zoe Monroe, 36</small>
+          </div>
           </div>
         </div>
       </div>
