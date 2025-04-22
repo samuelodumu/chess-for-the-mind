@@ -153,7 +153,7 @@ function Body() {
               alt='A smiling boy against a blured background'
             />
             <p className='mt-2 mb-0'>
-              “On the board, I don't have to rush. I can breath, plan, and
+              “On the board, I don't have to rush. I can breathe, plan, and
               grow.”
             </p>
             <small>—Tunde Onakoya, 12</small>
