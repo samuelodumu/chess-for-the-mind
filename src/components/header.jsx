@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import Button from './button';
 import '../App.css';
 
 function Header() {
+
   useEffect(() => {
     const elements = document.querySelectorAll('.slide-in');
     const observer = new IntersectionObserver(
@@ -18,9 +19,10 @@ function Header() {
 
     elements.forEach((el) => observer.observe(el));
 
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+    };
   }, []);
-  const [hover, setHover] = useState(false);
 
   return (
     <header className='d-flex flex-column align-items-center justify-content-center text-center p-4 text-light pt-serif-bold-italic hero'>
@@ -34,19 +36,17 @@ function Header() {
           move you make is a step toward sharper thinking, greater patience, and
           mental clarity.
         </p>
-        <Button
-          label={'Start Your Journey'}
-          onClick={() => window.open('https://www.chess.com', '_blank')}
-          className='btn-lg mt-4 px-3 py-2 rounded-5 fw-bold slide-in'
-          style={{
-            backgroundColor: 'aliceblue',
-            color: '#7a5c47',
-            transform: hover ? 'scale(1.08)' : 'scale(1)',
-            transition: 'transform 0.2s ease-in-out'
-          }}
-          onMouseEnter={() => setHover(true)}
-          onMouseLeave={() => setHover(false)}
-        />
+        {(
+          <Button
+            label={'Start Your Journey'}
+            onClick={() => window.open('https://www.chess.com', '_blank')}
+            className={`btn-lg mt-4 px-3 py-2 rounded-5 fw-bold hero-button slide-in`}
+            style={{
+              backgroundColor: 'aliceblue',
+              color: '#7a5c47', zIndex: '100',
+            }}
+          />
+        )}
       </div>
     </header>
   );

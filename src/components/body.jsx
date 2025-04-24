@@ -31,12 +31,20 @@ function Body() {
         </p>
         <div className='row'>
           <div className='col-sm-6 slide-in'>
+            <img
+              style={{ width: '36px', height: 'auto' }}
+              src='/images/chess_for_the_overthinker.png'
+            />
             <p>
               <span className='fw-semibold'>For the overthinker:</span> Chess
               teaches restraint — when to wait, and when to strike.
             </p>
           </div>
           <div className='col-sm-6 slide-in'>
+            <img
+              style={{ width: '40px', height: 'auto' }}
+              src='/images/chess_for_the_restless.png'
+            />
             <p>
               <span className='fw-semibold'>For the restless:</span> The board
               is a quiet space where your mind finds rhythm.
@@ -45,12 +53,20 @@ function Body() {
         </div>
         <div className='row'>
           <div className='col-sm-6 slide-in'>
+            <img
+              style={{ width: '40px', height: 'auto' }}
+              src='/images/chess_for_the_dreamer.png'
+            />
             <p>
               <span className='fw-semibold'>For the dreamer:</span> It's a
               canvas for strategy, imagination, and possibility
             </p>
           </div>
           <div className='col-sm-6 slide-in'>
+          <img
+                style={{ width: '40px', height: 'auto' }}
+                src='/images/chess_for_the_lifelong_learner.png'
+              />
             <p>
               <span className='fw-semibold'>For the lifelong learner:</span>{' '}
               There's always another layer to uncover.
@@ -144,32 +160,33 @@ function Body() {
             </p>
             <small>—Luis García, 19</small>
           </div>
-          <div className="row justify-content-center">
+          <div className='row justify-content-center'>
             <div className='col-md-4 mb-4 testimonial'>
-            <img
-              className='w-50 h-auto rounded-circle'
-              src='/images/smiling-boy.png'
-              loading='lazy'
-              alt='A smiling boy against a blured background'
-            />
-            <p className='mt-2 mb-0'>
-              “On the board, I don't have to rush. I can breathe, plan, and
-              grow.”
-            </p>
-            <small>—Tunde Onakoya, 12</small>
-          </div>
-          <div className='col-md-4 mb-4 testimonial'>
-            <img
-              className='w-50 h-auto rounded-circle'
-              src='/images/white-woman.jpg'
-              loading='lazy'
-              alt='A smiling boy against a blured background'
-            />
-            <p className='mt-2 mb-0'>
-              “Chess is my escape. When I play, it's like nothing else matters.”
-            </p>
-            <small>—Zoe Monroe, 36</small>
-          </div>
+              <img
+                className='w-50 h-auto rounded-circle'
+                src='/images/smiling-boy.png'
+                loading='lazy'
+                alt='A smiling boy against a blured background'
+              />
+              <p className='mt-2 mb-0'>
+                “On the board, I don't have to rush. I can breathe, plan, and
+                grow.”
+              </p>
+              <small>—Tunde Onakoya, 12</small>
+            </div>
+            <div className='col-md-4 mb-4 testimonial'>
+              <img
+                className='w-50 h-auto rounded-circle'
+                src='/images/white-woman.jpg'
+                loading='lazy'
+                alt='A smiling boy against a blured background'
+              />
+              <p className='mt-2 mb-0'>
+                “Chess is my escape. When I play, it's like nothing else
+                matters.”
+              </p>
+              <small>—Zoe Monroe, 36</small>
+            </div>
           </div>
         </div>
       </div>
