@@ -32,7 +32,7 @@ function Body() {
         <div className='row'>
           <div className='col-sm-6 slide-in'>
             <img
-              style={{ width: '36px', height: 'auto' }}
+              style={{ width: '40px', height: 'auto' }}
               src='/images/chess_for_the_overthinker.png'
             />
             <p>
